@@ -1,17 +1,57 @@
 {
   "name": "atomic-library",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "this is library of react components and some functions useful for development",
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.es.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^17.0.2",
+  "peerDependencies": {
+    "react": "^16.8.0",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@vitejs/plugin-react": "^1.0.7",
+    "babel-jest": "^27.4.6",
+    "jest": "^27.4.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
     "vite": "^2.7.2"
-  }
+  },
+  "dependencies": {
+    "styled-components": "^5.3.3"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/my-library-org/atomic-library.git"
+  },
+  "author": "david gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/my-library-org/atomic-library/issues"
+  },
+  "homepage": "https://github.com/my-library-org/atomic-library#readme"
 }

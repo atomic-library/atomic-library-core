@@ -1,5 +1,5 @@
-import styled from 'styled-components'; 
-import {customizer, TextTypes} from '../main'
+import styled from 'styled-components' 
+import {customizer} from '../main'
 import {getCommon} from '../functions'
 import {useComponentContext} from '../MyContext'
 
@@ -8,7 +8,6 @@ const H1 = styled.h1`
 
     ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
 
-    ${({type})=> type && TextTypes[type]}
     ${(...rest)=>getCommon(...rest)}
 
 

@@ -1,10 +1,32 @@
-import {Box} from '../lib/components'
+import {Box, MyBtn} from '../lib/components'
+import {createVariants} from '../lib/Variants'
+
+
+
+createVariants({
+  buttons: {
+    variant1: `
+    background: #B459FA;
+    border-radius: 10px;
+    color: #fff;
+  `
+  },
+  var1: `
+  background: #B459FA;
+  border-radius: 10px;
+  color: #fff;
+`
+  
+})
+
+
 function App() {
 
 
   return (
     <>
-    <Box h="100px" bg="red"></Box>
+    <MyBtn variant="[buttons.variant1]">button</MyBtn>
+    <Box ></Box>
     </>
   )
 }

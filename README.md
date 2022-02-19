@@ -5,21 +5,21 @@ this is a library of react components and other useful functions for development
 
 ### npm
 ```bash
-npm install atomic-library 
+npm install atomic-library-core
 ```
 ### yarn 
 ```bash
-yarn add atomic-library
+yarn add atomic-library-core
 ```
 ## Demo
     this is little example of one of the components
 ```jsx
 import {
     Box as Wrapper,
-    Box as Header,
-    Box as Main,
-    Box as Aside,
-    Box as Footer,
+    Header,
+    Main,
+    Aside,
+    Footer,
     Box
 } from 'atomic-library'
 
@@ -36,14 +36,14 @@ function App() {
             'footer footer footer'
         "
       >
-        <Header header h='80px' bg="#ccc" span="header"/>
-        <Main main flex wrap span="main">
+        <Header  h='80px' bg="#ccc" span="header"/>
+        <Main  flex wrap span="main">
           <Box  h='200px' bg="#909A9B" m="0 0 5px 0"/>
           <Box  h='200px' bg="#909A9B" m="5px 0"/>
           <Box  h='200px' bg="#909A9B" m="5px 0"/>
         </Main>
-        <Aside aside h='400px'bg="#CACACA" m="0" span="aside"/>
-        <Footer footer h='80px'bg="#ccc" span="footer"/>
+        <Aside  h='400px'bg="#CACACA" m="0" span="aside"/>
+        <Footer  h='80px'bg="#ccc" span="footer"/>
     </Wrapper>
   )
 }

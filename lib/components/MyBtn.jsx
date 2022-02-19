@@ -152,14 +152,16 @@ const Button = styled.button`
   ${({
     size, rounded, fullRounded, raised, span, 
     width, w, height, h, bg, background, 
-    padding, p, margin, m, layer, z, variant,
+    padding, p, margin, m, layer, z, variants,
+    modifiers,
 
     text, lineHeight, lh, fw, fontWeight, fs, fontSize,
     c, color
   })=>getCommon({
     size: false, rounded, fullRounded, raised, span, 
     width, w, height, h, bg, background, 
-    padding, p, margin, m, layer, z, variant,
+    padding, p, margin, m, layer, z, variants,
+    modifiers,
 
     text, lineHeight, lh, fw, fontWeight, fs, fontSize,
     c, color

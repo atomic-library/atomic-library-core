@@ -53,3 +53,6 @@ export default App
 and result will be this:
 ![Screenshot](src/assets/Capture.PNG)
 
+## Note
+this is the new version of <a href="https://github.com/my-library-org/my-library-core">my-library-core</a>
+

@@ -49,9 +49,7 @@
     "url": "git+https://github.com/my-library-org/atomic-library.git"
   },
   "author": "david gonzalez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/my-library-org/atomic-library/issues"
-  },
-  "homepage": "https://github.com/my-library-org/atomic-library#readme"
+  "license": "ISC"
+
+  
 }

@@ -1,75 +1,14 @@
 import styled from 'styled-components' 
-import {customizer} from '../main'
-import {getCommon} from '../functions'
 import {useComponentContext} from '../MyContext'
+import getProperties from '../getProperties'
 
 
-const H1 = styled.h1`
-
-    ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
-
-    ${(...rest)=>getCommon(...rest)}
-
-
-    ${({myStyle}) => myStyle && customizer(myStyle)}
-    ${({superStyle}) => superStyle && customizer(superStyle)}
-    ${({insertStyle}) => insertStyle && insertStyle}
-`
-const H2 = styled.h2`
-
-    ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
-
-    ${(...rest)=>getCommon(...rest)}
-
-
-    ${({myStyle}) => myStyle && customizer(myStyle)}
-    ${({superStyle}) => superStyle && customizer(superStyle)}
-    ${({insertStyle}) => insertStyle && insertStyle}
-`
-const H3 = styled.h3`
-
-    ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
-
-    ${(...rest)=>getCommon(...rest)}
-
-
-    ${({myStyle}) => myStyle && customizer(myStyle)}
-    ${({superStyle}) => superStyle && customizer(superStyle)}
-    ${({insertStyle}) => insertStyle && insertStyle}
-`
-const H4 = styled.h4`
-
-    ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
-
-    ${(...rest)=>getCommon(...rest)}
-
-
-    ${({myStyle}) => myStyle && customizer(myStyle)}
-    ${({superStyle}) => superStyle && customizer(superStyle)}
-    ${({insertStyle}) => insertStyle && insertStyle}
-`
-const H5 = styled.h5`
-
-    ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
-
-    ${(...rest)=>getCommon(...rest)}
-
-
-    ${({myStyle}) => myStyle && customizer(myStyle)}
-    ${({superStyle}) => superStyle && customizer(superStyle)}
-    ${({insertStyle}) => insertStyle && insertStyle}
-`
-const H6 = styled.h6`
-
-    ${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
-
-    ${(...rest)=>getCommon(...rest)}
-
-
-    ${({myStyle}) => myStyle && customizer(myStyle)}
-    ${({superStyle}) => superStyle && customizer(superStyle)}
-    ${({insertStyle}) => insertStyle && insertStyle}
-`
+const H1 = styled.h1`${(...rest)=>getProperties(...rest)}`
+const H2 = styled.h2`${(...rest)=>getProperties(...rest)}`
+const H3 = styled.h3`${(...rest)=>getProperties(...rest)}`
+const H4 = styled.h4`${(...rest)=>getProperties(...rest)}`
+const H5 = styled.h5`${(...rest)=>getProperties(...rest)}`
+const H6 = styled.h6`${(...rest)=>getProperties(...rest)}`
 const Title = ({
     className, myRef, children,
     h1, h2, h3, h4, h5, h6, bold, italic,

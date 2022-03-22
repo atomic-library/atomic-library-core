@@ -1,18 +1,7 @@
 import styled from 'styled-components'; 
-import {customizer} from '../main'
-import {getCommon} from '../functions'
 import {useComponentContext} from '../MyContext'
-
-const Article = styled.article`
-${({insertStyleBefore})=> insertStyleBefore && insertStyleBefore}
-
-${(...rest)=>getCommon(...rest)}
-
-
-${({myStyle}) => myStyle && customizer(myStyle)}
-${({superStyle}) => superStyle && customizer(superStyle)}
-${({insertStyle}) => insertStyle && insertStyle}
-`
+import getProperties from '../getProperties'
+const Article = styled.article`${(...rest)=>getProperties(...rest)}`
 
 const Text = ({children, className, myRef, bold, italic,...rest}) => {
     const {...props} = useComponentContext() || false

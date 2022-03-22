@@ -1,5 +1,9 @@
 node_modules
 .DS_Store
+src
+index.html
+vite.config
+yarn.lock
 dist
 dist-ssr
 *.local

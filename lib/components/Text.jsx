@@ -1,5 +1,5 @@
 import styled from 'styled-components'; 
-import {useComponentContext} from '../MyContext'
+import {useComponentContext} from '../AtomicContext'
 import getProperties from '../getProperties'
 const Article = styled.article`${(...rest)=>getProperties(...rest)}`
 

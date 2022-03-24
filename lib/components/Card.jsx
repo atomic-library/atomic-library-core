@@ -1,5 +1,5 @@
 import {Box, Section, Header, Footer} from './index'
-import {useComponentContext} from '../MyContext'
+import {useComponentContext} from '../AtomicContext'
 const Card = ({
     s1Content = false, s1Style = false, s1Props = false,
     s2Content = false, s2Style = false, s2Props = false, 

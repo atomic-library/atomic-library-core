@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box } from './index'
-import {useComponentContext} from '../MyContext'
+import {useComponentContext} from '../AtomicContext'
 
 const Modal = ({children, open = false, ...rest }) => {
     const {...props} = useComponentContext() || false

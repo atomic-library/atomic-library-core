@@ -1,10 +1,12 @@
 {
   "name": "atomic-library-core",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "description": "this is library of react components and some functions useful for development",
   "keywords": [
     "react",
-    "components"
+    "components",
+    "styled-components",
+    "reusable"
   ],
   "files": [
     "dist"

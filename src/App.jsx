@@ -4,7 +4,10 @@ import './App.css'
 function App() {
   return (
     <>
-    <Box h="100px" bg="#ccc" mT="100px "></Box>
+    <Box flex  h="200px" bg="#ccc" y="center" x="end">
+      <MyBtn>button</MyBtn>
+      <MyBtn>button</MyBtn>
+    </Box>
     </> 
   )
 }

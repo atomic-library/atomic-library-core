@@ -3,7 +3,7 @@ import React from 'react';
 import styled from "styled-components"
 import {customizer, MyThemeColors as colors}  from "../main";
 import getProperties from '../getProperties'
-import {useComponentContext} from '../MyContext'
+import {useComponentContext} from '../AtomicContext'
 
 //---------------END_IMPORTS---------------
 

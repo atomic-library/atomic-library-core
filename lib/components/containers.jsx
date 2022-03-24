@@ -1,18 +1,17 @@
 import styled from 'styled-components'; 
-import {useComponentContext} from '../MyContext'
+import {useComponentContext} from '../AtomicContext'
 import getProperties from '../getProperties'
 
-const init = 'width: 100%; margin: auto;'
 
-const BoxArticle =  styled.article`${init} ${(...rest)=>getProperties(...rest)}`
-const BoxAside =  styled.aside`${init} ${(...rest)=>getProperties(...rest)}`
-const BoxBox =  styled.div`${init} ${(...rest)=>getProperties(...rest)}`
-const BoxFooter =  styled.footer`${init} ${(...rest)=>getProperties(...rest)}`
-const BoxForm =  styled.form`${init} ${(...rest)=>getProperties(...rest)}`
-const BoxHeader =  styled.header`${init} ${(...rest)=>getProperties(...rest)}`
-const BoxMain =  styled.main`${init} ${(...rest)=>getProperties(...rest)}`
-const BoxSection =  styled.section`${init} ${(...rest)=>getProperties(...rest)}`
-const BoxImg =  styled.img`${init} ${(...rest)=>getProperties(...rest)}`
+const BoxArticle =  styled.article`margin: auto; ${(...rest)=>getProperties(...rest)}`
+const BoxAside =  styled.aside`margin: auto; ${(...rest)=>getProperties(...rest)}`
+const BoxBox =  styled.div`margin: auto; ${(...rest)=>getProperties(...rest)}`
+const BoxFooter =  styled.footer`margin: auto; ${(...rest)=>getProperties(...rest)}`
+const BoxForm =  styled.form`margin: auto; ${(...rest)=>getProperties(...rest)}`
+const BoxHeader =  styled.header`margin: auto; ${(...rest)=>getProperties(...rest)}`
+const BoxMain =  styled.main`margin: auto; ${(...rest)=>getProperties(...rest)}`
+const BoxSection =  styled.section`margin: auto; ${(...rest)=>getProperties(...rest)}`
+const BoxImg =  styled.img`margin: auto; ${(...rest)=>getProperties(...rest)}`
 const BoxNav =  styled.nav`${(...rest)=>getProperties(...rest)}`
 
 const Article = ({myRef, className, children, ...rest}) => {

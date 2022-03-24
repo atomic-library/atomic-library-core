@@ -1,6 +1,6 @@
 import React from 'react';
 import {Header, Nav}  from './index'
-import {useComponentContext} from '../MyContext'
+import {useComponentContext} from '../AtomicContext'
 
 const headerStyles = {
     top : "width: 100%; height: 80px; top: 0; aling-items: center;",

@@ -6,7 +6,7 @@ function App() {
     <>
     <Box flex  h="200px" bg="#ccc" y="center" x="end">
       <MyBtn>button</MyBtn>
-      <MyBtn>button</MyBtn>
+      <button>button</button>
     </Box>
     </> 
   )

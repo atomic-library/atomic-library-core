@@ -4,9 +4,9 @@ import {useComponentContext} from '../AtomicContext'
 
 const headerStyles = {
     top : "width: 100%; height: 80px; top: 0; aling-items: center;",
-    bottom : "width: 100%; height: 80px; bottom: 0;",
-    right : "display: inline-block; width: 80px; height: 100vh; right: 0; ",
-    left : "display: inline-block; width: 80px; height: 100vh; left: 0; "
+    bottom : "width: 100%; height: 80px; bottom: 0; aling-items: center;",
+    right : "display: inline-block; width: 80px; height: 100vh; right: 0; aling-items: center;",
+    left : "display: inline-block; width: 80px; height: 100vh; left: 0; aling-items: center; "
 }
 const navStyles = {
     top : "flex-direction: row; max-width: 1200px;",

@@ -15,6 +15,7 @@ yarn add atomic-library-core
 [Go to documentation](https://atomic-library.com/)
 
 ## Demo
+This is little demo about containers, all of them are basically the same component, the difference is that each one return a sematic tag
 ```jsx
 import {
   Box as Wrapper,
@@ -52,7 +53,8 @@ return (
 
 export default App
 ```
-![Screenshot](src/assets/Capture.PNG)
+Result:
+![Screenshot](https://github.com/atomic-library/atomic-library-core/blob/master/src/assets/Capture.PNG)
 ## Note
 this is the new version of <a href="https://github.com/my-library-org/my-library-core">my-library-core</a>
 

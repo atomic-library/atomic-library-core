@@ -14,6 +14,14 @@ const BoxSection =  styled.section`margin: auto; ${(...rest)=>getProperties(...r
 const BoxImg =  styled.img`margin: auto; ${(...rest)=>getProperties(...rest)}`
 const BoxNav =  styled.nav`${(...rest)=>getProperties(...rest)}`
 
+const TagP =  styled.p`${(...rest)=>getProperties(...rest)}`
+const TagH1 = styled.h1`${(...rest)=>getProperties(...rest)}`
+const TagH2 = styled.h2`${(...rest)=>getProperties(...rest)}`
+const TagH3 = styled.h3`${(...rest)=>getProperties(...rest)}`
+const TagH4 = styled.h4`${(...rest)=>getProperties(...rest)}`
+const TagH5 = styled.h5`${(...rest)=>getProperties(...rest)}`
+const TagH6 = styled.h6`${(...rest)=>getProperties(...rest)}`
+
 const Article = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
     return <BoxArticle {...props} {...rest} ref={myRef} className={className}>{children}</BoxArticle>}
@@ -54,4 +62,52 @@ const Nav = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
     return <BoxNav {...props} {...rest} ref={myRef} className={className}>{children}</BoxNav>}
 
-export { Article, Aside, Box, Footer, Form, Header, Main, Section, Nav, Img }
+const Paragraph = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <TagP {...props} {...rest} ref={myRef} className={className}>{children}</TagP>}
+
+const H1 = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <TagH1 {...props} {...rest} ref={myRef} className={className}>{children}</TagH1>}
+
+const H2 = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <TagH2 {...props} {...rest} ref={myRef} className={className}>{children}</TagH2>}
+
+const H3 = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <TagH3 {...props} {...rest} ref={myRef} className={className}>{children}</TagH3>}
+
+const H4 = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <TagH4 {...props} {...rest} ref={myRef} className={className}>{children}</TagH4>}
+
+const H5 = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <TagH5 {...props} {...rest} ref={myRef} className={className}>{children}</TagH5>}
+
+const H6 = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <TagH6 {...props} {...rest} ref={myRef} className={className}>{children}</TagH6>}
+
+
+
+export {
+    Article,
+    Aside,
+    Box,
+    Footer,
+    Form,
+    Header,
+    Main,
+    Section,
+    Nav,
+    Img,
+    Paragraph,
+    H1,
+    H2,
+    H3,
+    H4,
+    H5,
+    H6
+}

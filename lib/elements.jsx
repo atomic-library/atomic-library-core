@@ -1,6 +1,6 @@
 import styled from 'styled-components'; 
-import {useComponentContext} from '../AtomicContext'
-import getProperties from '../getProperties'
+import {useComponentContext} from './AtomicContext'
+import getProperties from './getProperties'
 
 const init = "margin: auto; width: 100%;"
 const BoxArticle =  styled.article`${init} ${(...rest)=>getProperties(...rest)}`

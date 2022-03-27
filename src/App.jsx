@@ -1,16 +1,30 @@
-import {Box, Box as Wrapper, Header, Main, Footer, Aside, Article } from '../lib/components'
+import {Box, Box as Wrapper, Header, Main, Footer, Aside, Article } from '../lib/elements'
 import { createTheme, Theme } from '../lib/Theme'
 import './App.css'
 function App() {
   return (
     <>
   
-    <Box flex flexWrap bBm="1px solid #00">
-      <Box  h="100px" bg="#ccc" m="10px"></Box>
-      <Box  h="100px" bg="#ccc" m="10px"></Box>
-      <Box  h="100px" bg="#ccc" m="10px"></Box>
-    </Box>
-    <Box bg="#ccc" m="10px" h="100px" bBm="1px solid #000" borderBottomColor="red" br4="10px"></Box>
+  <Wrapper 
+      grid
+      gap="10px"
+      size="lg" 
+      cols="1fr 1fr 1fr" 
+      areas="
+          'header header header'
+          'main main aside'
+          'footer footer footer'
+      "
+    >
+      <Header  h='80px' bg="#ccc" span="header"/>
+      <Main  flex flexWrap gap="10px" span="main">
+        <Box  h='150px' bg="#909A9B" />
+        <Box  h='150px' bg="#909A9B" />
+        <Box  h='150px' bg="#909A9B" />
+      </Main>
+      <Aside  h='400px' bg="#CACACA" m="0" span="aside"/>
+      <Footer  h='80px' bg="#ccc" span="footer"/>
+  </Wrapper>
     </> 
   )
 }

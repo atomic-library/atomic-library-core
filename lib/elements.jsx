@@ -12,7 +12,10 @@ const BoxHeader =  styled.header`${init} ${(...rest)=>getProperties(...rest)}`
 const BoxMain =  styled.main`${init} ${(...rest)=>getProperties(...rest)}`
 const BoxSection =  styled.section`${init} ${(...rest)=>getProperties(...rest)}`
 const BoxImg =  styled.img`${init} ${(...rest)=>getProperties(...rest)}`
+
 const BoxNav =  styled.nav`${(...rest)=>getProperties(...rest)}`
+const BoxCode =  styled.code`${(...rest)=>getProperties(...rest)}`
+const BoxPre =  styled.pre`${(...rest)=>getProperties(...rest)}`
 
 const TagP =  styled.p`${(...rest)=>getProperties(...rest)}`
 const TagH1 = styled.h1`${(...rest)=>getProperties(...rest)}`
@@ -61,6 +64,12 @@ const Img = ({myRef, className, children, ...rest}) => {
 const Nav = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
     return <BoxNav {...props} {...rest} ref={myRef} className={className}>{children}</BoxNav>}
+const Code = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxCode {...props} {...rest} ref={myRef} className={className}>{children}</BoxCode>}
+const Pre = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxPre {...props} {...rest} ref={myRef} className={className}>{children}</BoxPre>}
 
 const Paragraph = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
@@ -102,6 +111,8 @@ export {
     Main,
     Section,
     Nav,
+    Code,
+    Pre,
     Img,
     Paragraph,
     H1,

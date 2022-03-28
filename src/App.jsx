@@ -1,6 +1,12 @@
 import {Box, Box as Wrapper, Header, Main, Footer, Aside, Article } from '../lib/elements'
 import { createTheme, Theme } from '../lib/Theme'
 import './App.css'
+
+createTheme({
+  variants: {
+    v1: 'background: red;'
+  }
+})
 function App() {
   return (
     <>
@@ -16,7 +22,7 @@ function App() {
           'footer footer footer'
       "
     >
-      <Header  h='80px' bg="#ccc" span="header"/>
+      <Header  h='80px' variants={["v1"]} span="header"/>
       <Main  flex flexWrap gap="10px" span="main">
         <Box  h='150px' bg="#909A9B" />
         <Box  h='150px' bg="#909A9B" />

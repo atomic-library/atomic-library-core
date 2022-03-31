@@ -19,6 +19,7 @@ const BoxPre =  styled.pre`${(...rest)=>getProperties(...rest)}`
 const BoxButton =  styled.button`${(...rest)=>getProperties(...rest)}`
 const BoxSpan =  styled.span`${(...rest)=>getProperties(...rest)}`
 const BoxBlockquote =  styled.blockquote`${(...rest)=>getProperties(...rest)}`
+const BoxHr =  styled.hr`${(...rest)=>getProperties(...rest)}`
 
 const BoxInput =  styled.input`${(...rest)=>getProperties(...rest)}`
 const BoxTextarea =  styled.textarea`${(...rest)=>getProperties(...rest)}`
@@ -30,6 +31,7 @@ const BoxLi =  styled.li`${(...rest)=>getProperties(...rest)}`
 const BoxTable =  styled.table`${(...rest)=>getProperties(...rest)}`
 const BoxTr =  styled.tr`${(...rest)=>getProperties(...rest)}`
 const BoxTd =  styled.td`${(...rest)=>getProperties(...rest)}`
+const BoxTh =  styled.th`${(...rest)=>getProperties(...rest)}`
 const BoxTbody =  styled.tbody`${(...rest)=>getProperties(...rest)}`
 const BoxThead =  styled.thead`${(...rest)=>getProperties(...rest)}`
 const BoxTfoot =  styled.tfoot`${(...rest)=>getProperties(...rest)}`
@@ -105,6 +107,10 @@ const Blockquote = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
     return <BoxBlockquote {...props} {...rest} ref={myRef} className={className}>{children}</BoxBlockquote>}
 
+const Hr = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxHr {...props} {...rest} ref={myRef} className={className}>{children}</BoxHr>}
+
 const Textarea = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
     return <BoxTextarea {...props} {...rest} ref={myRef} className={className}>{children}</BoxTextarea>}
@@ -133,6 +139,9 @@ const Td = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
     return <BoxTd {...props} {...rest} ref={myRef} className={className}>{children}</BoxTd>}
 
+const Th = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxTh {...props} {...rest} ref={myRef} className={className}>{children}</BoxTh>}
 
 const Thead = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
@@ -200,12 +209,14 @@ export {
     Span,
     Input,
     Blockquote,
+    Hr,
     Ul,
     Ol,
     Li,
     Table,
     Td,
     Tr,
+    Th,
     Thead,
     Tbody,
     Tfoot,

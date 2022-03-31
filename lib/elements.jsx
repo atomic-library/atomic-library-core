@@ -11,12 +11,28 @@ const BoxForm =  styled.form`${init} ${(...rest)=>getProperties(...rest)}`
 const BoxHeader =  styled.header`${init} ${(...rest)=>getProperties(...rest)}`
 const BoxMain =  styled.main`${init} ${(...rest)=>getProperties(...rest)}`
 const BoxSection =  styled.section`${init} ${(...rest)=>getProperties(...rest)}`
-const BoxImg =  styled.img`${init} ${(...rest)=>getProperties(...rest)}`
 
+const BoxImg =  styled.img`${(...rest)=>getProperties(...rest)}`
 const BoxNav =  styled.nav`${(...rest)=>getProperties(...rest)}`
 const BoxCode =  styled.code`${(...rest)=>getProperties(...rest)}`
 const BoxPre =  styled.pre`${(...rest)=>getProperties(...rest)}`
 const BoxButton =  styled.button`${(...rest)=>getProperties(...rest)}`
+const BoxSpan =  styled.span`${(...rest)=>getProperties(...rest)}`
+const BoxBlockquote =  styled.blockquote`${(...rest)=>getProperties(...rest)}`
+
+const BoxInput =  styled.input`${(...rest)=>getProperties(...rest)}`
+const BoxTextarea =  styled.textarea`${(...rest)=>getProperties(...rest)}`
+
+const BoxUl =  styled.ul`${(...rest)=>getProperties(...rest)}`
+const BoxOl =  styled.ol`${(...rest)=>getProperties(...rest)}`
+const BoxLi =  styled.li`${(...rest)=>getProperties(...rest)}`
+
+const BoxTable =  styled.table`${(...rest)=>getProperties(...rest)}`
+const BoxTr =  styled.tr`${(...rest)=>getProperties(...rest)}`
+const BoxTd =  styled.td`${(...rest)=>getProperties(...rest)}`
+const BoxTbody =  styled.tbody`${(...rest)=>getProperties(...rest)}`
+const BoxThead =  styled.thead`${(...rest)=>getProperties(...rest)}`
+const BoxTfoot =  styled.tfoot`${(...rest)=>getProperties(...rest)}`
 
 const TagP =  styled.p`${(...rest)=>getProperties(...rest)}`
 const TagH1 = styled.h1`${(...rest)=>getProperties(...rest)}`
@@ -76,6 +92,60 @@ const Pre = ({myRef, className, children, ...rest}) => {
 const Button = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
     return <BoxButton {...props} {...rest} ref={myRef} className={className}>{children}</BoxButton>}
+
+const Span = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxSpan {...props} {...rest} ref={myRef} className={className}>{children}</BoxSpan>}
+
+const Input = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxInput {...props} {...rest} ref={myRef} className={className}>{children}</BoxInput>}
+
+const Blockquote = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxBlockquote {...props} {...rest} ref={myRef} className={className}>{children}</BoxBlockquote>}
+
+const Textarea = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxTextarea {...props} {...rest} ref={myRef} className={className}>{children}</BoxTextarea>}
+
+const Ul = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxUl {...props} {...rest} ref={myRef} className={className}>{children}</BoxUl>}
+
+const Ol = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxOl {...props} {...rest} ref={myRef} className={className}>{children}</BoxOl>}
+
+const Li = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxLi {...props} {...rest} ref={myRef} className={className}>{children}</BoxLi>}
+
+const Table = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxTable {...props} {...rest} ref={myRef} className={className}>{children}</BoxTable>}
+
+const Tr = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxTr {...props} {...rest} ref={myRef} className={className}>{children}</BoxTr>}
+
+const Td = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxTd {...props} {...rest} ref={myRef} className={className}>{children}</BoxTd>}
+
+
+const Thead = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxThead {...props} {...rest} ref={myRef} className={className}>{children}</BoxThead>}
+
+const Tbody = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxTbody {...props} {...rest} ref={myRef} className={className}>{children}</BoxTbody>}
+
+const Tfoot = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxTfoot {...props} {...rest} ref={myRef} className={className}>{children}</BoxTfoot>}
+
 const Paragraph = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
     return <TagP {...props} {...rest} ref={myRef} className={className}>{children}</TagP>}
@@ -126,5 +196,18 @@ export {
     H3,
     H4,
     H5,
-    H6
+    H6,
+    Span,
+    Input,
+    Blockquote,
+    Ul,
+    Ol,
+    Li,
+    Table,
+    Td,
+    Tr,
+    Thead,
+    Tbody,
+    Tfoot,
+    Textarea,
 }

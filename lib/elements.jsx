@@ -20,6 +20,7 @@ const BoxButton =  styled.button`${(...rest)=>getProperties(...rest)}`
 const BoxSpan =  styled.span`${(...rest)=>getProperties(...rest)}`
 const BoxBlockquote =  styled.blockquote`${(...rest)=>getProperties(...rest)}`
 const BoxHr =  styled.hr`${(...rest)=>getProperties(...rest)}`
+const BoxA =  styled.a`${(...rest)=>getProperties(...rest)}`
 
 const BoxInput =  styled.input`${(...rest)=>getProperties(...rest)}`
 const BoxTextarea =  styled.textarea`${(...rest)=>getProperties(...rest)}`
@@ -110,6 +111,10 @@ const Blockquote = ({myRef, className, children, ...rest}) => {
 const Hr = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
     return <BoxHr {...props} {...rest} ref={myRef} className={className}>{children}</BoxHr>}
+
+const A = ({myRef, className, children, ...rest}) => {
+    const {...props} = useComponentContext() || false
+    return <BoxA {...props} {...rest} ref={myRef} className={className}>{children}</BoxA>}
 
 const Textarea = ({myRef, className, children, ...rest}) => {
     const {...props} = useComponentContext() || false
@@ -210,6 +215,7 @@ export {
     Input,
     Blockquote,
     Hr,
+    A,
     Ul,
     Ol,
     Li,

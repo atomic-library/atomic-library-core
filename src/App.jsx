@@ -1,8 +1,8 @@
 //-----------------------------------
 //GO TO LIB IF YOU WANT SEE THE CODE
 //-----------------------------------
-import {Box, Box as Wrapper, Header, Main, Footer, Aside, Article } from '../lib/elements'
-import { createTheme, Theme } from '../lib/Theme'
+import {Box, Box as Wrapper, Header, Main, Footer, Aside, Article, H1 } from '../lib/elements'
+import { createTheme, Theme, } from '../lib/Theme'
 import {useRef, useEffect} from 'react'
 import AtomicContext from '../lib/AtomicContext'
 import './App.css'
@@ -35,7 +35,7 @@ function App() {
     >
       <Header  h='80px' variants={["v1"]}  span="header"/>
       <Main  flex flexWrap gap="10px" span="main">
-        <Box  h='150px' bg="#909A9B" ref={boxRef}/>
+        <Box  h='150px' bg="#909A9B" />
         <Box  h='150px' bg="#909A9B" />
         <Box  h='150px' bg="#909A9B" />
       </Main>
@@ -54,6 +54,7 @@ function App() {
     <Box ></Box>
   </AtomicContext.Provider>
   <Box bg="orange" h="100px" ></Box>
+  <H1>gaosd</H1>
     </> 
   )
 }

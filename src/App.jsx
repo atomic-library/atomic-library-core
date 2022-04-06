@@ -1,10 +1,12 @@
 //-----------------------------------
 //GO TO LIB IF YOU WANT SEE THE CODE
 //-----------------------------------
-import {Box, Box as Wrapper, Header, Main, Footer, Aside, Article, H1 } from '../lib/elements'
+import {Box, Box as Wrapper, Header, Main, Footer, Aside, Article, } from '../lib/elements'
 import { createTheme, Theme, } from '../lib/Theme'
 import {useRef, useEffect} from 'react'
 import AtomicContext from '../lib/AtomicContext'
+import styled from 'styled-components'
+import gp from '../lib/getProperties'
 import './App.css'
 
 createTheme({
@@ -12,6 +14,20 @@ createTheme({
     v1: 'background: red;'
   }
 })
+
+// let elements = ["h1", "div", "p"]
+// const generate = (arr) => {
+//   let res = {}
+//   arr.forEach(e => {
+//     let newStr = e[0].toUpperCase() + e.slice(1) 
+//           res[newStr] = styled(e)` background: blue; width: 100%; height: 100px; margin: 10px;`
+//   })
+//   return res
+// }
+// let result = generate(elements)
+// const {H1, Div, P} = result
+// console.log(H1)
+// console.log(Box)
 function App() {
 
   const boxRef = useRef(null)
@@ -19,9 +35,16 @@ function App() {
   useEffect(()=>{
     console.log(boxRef)
   }, [])
+
+
+ 
+
   return (
     <>
-  
+    {/* <H1></H1>
+    <Div></Div>
+    <P></P> */}
+    
   <Wrapper 
       grid
       gap="10px"
@@ -53,8 +76,8 @@ function App() {
     <Box bg="#ccc"></Box>
     <Box ></Box>
   </AtomicContext.Provider>
-  <Box bg="orange" h="100px" ></Box>
-  <H1>gaosd</H1>
+  <Box bg="orange" h="100px" ref={boxRef}></Box>
+  
     </> 
   )
 }

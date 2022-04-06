@@ -10,9 +10,9 @@ let elements = ["img", "nav",  "code", "pre", "button", "span", "blockquote", "q
 
 let res = {Box: styled.div`${init} ${(rest)=>gp({...c(),...rest})}`}
 containers.forEach(e => {
-        res[e[0].toUpperCase() + e.slice(1)] = s(e)`${init} ${(rest)=>gp({...c(),...rest})}`})
+        res[e[0].toUpperCase() + e.slice(1)] = styled(e)`${init} ${(rest)=>gp({...c(),...rest})}`})
 elements.forEach(e => {
-        res[e[0].toUpperCase() + e.slice(1)] = s(e)`${(rest)=>gp({...c(),...rest})}`})
+        res[e[0].toUpperCase() + e.slice(1)] = styled(e)`${(rest)=>gp({...c(),...rest})}`})
         
 export const {Article, Aside, Box, Footer, Form, Header, Main, Section, Nav,
         Code, Pre, Button, Img, P, H1, H2, H3, H4, H5, H6, Span, Input, 

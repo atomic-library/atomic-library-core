@@ -1,7 +1,7 @@
 //-----------------------------------
 //GO TO LIB IF YOU WANT SEE THE CODE
 //-----------------------------------
-import {Box, Box as Wrapper, Header, Main, Footer, Aside, Article, } from '../lib/elements'
+import {Box, Box as Wrapper, Header,Button, Main, Footer, Aside, Article, Input } from '../lib/elements'
 import { createTheme, Theme, } from '../lib/Theme'
 import {useRef, useEffect} from 'react'
 import AtomicContext from '../lib/AtomicContext'
@@ -41,11 +41,8 @@ function App() {
 
   return (
     <>
-    {/* <H1></H1>
-    <Div></Div>
-    <P></P> */}
-    
-  <Wrapper 
+     
+      <Wrapper 
       grid
       gap="10px"
       size="lg" 
@@ -56,28 +53,20 @@ function App() {
           'footer footer footer'
       "
     >
-      <Header  h='80px' variants={["v1"]}  span="header"/>
+      <Header  h='80px' bg="#ccc" span="header"/>
       <Main  flex flexWrap gap="10px" span="main">
         <Box  h='150px' bg="#909A9B" />
         <Box  h='150px' bg="#909A9B" />
         <Box  h='150px' bg="#909A9B" />
       </Main>
-      <Aside  h='400px' bg="#CACACA"  m="0" span="aside"/>
+      <Aside  h='400px' bg="#CACACA" m="0" span="aside"/>
       <Footer  h='80px' bg="#ccc" span="footer"/>
   </Wrapper>
-  <Box w="100px" className="element">
-    <p>hola</p>
-    asfsaf
+  <Box flex gap="10px" flexWrap flowColumnReverse>
+    <Box bg="#ccc" h="100px" w="200px" m="0" hover={{bg: 'red'}}>1</Box>
+    <Box bg="#ccc" h="100px" w="200px" m="0">2</Box>
+    <Box bg="#ccc" h="100px" w="200px" m="0">3</Box>
   </Box>
-  <AtomicContext.Provider value={{bg:"red", h:"100px", m:"10px"}}>
-    <Box m="30px"></Box>
-    <Box ></Box>
-    <Box ></Box>
-    <Box bg="#ccc"></Box>
-    <Box ></Box>
-  </AtomicContext.Provider>
-  <Box bg="orange" h="100px" ref={boxRef}></Box>
-  
     </> 
   )
 }

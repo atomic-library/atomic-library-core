@@ -15,61 +15,20 @@ createTheme({
   }
 })
 
-// let elements = ["h1", "div", "p"]
-// const generate = (arr) => {
-//   let res = {}
-//   arr.forEach(e => {
-//     let newStr = e[0].toUpperCase() + e.slice(1) 
-//           res[newStr] = styled(e)` background: blue; width: 100%; height: 100px; margin: 10px;`
-//   })
-//   return res
-// }
-// let result = generate(elements)
-// const {H1, Div, P} = result
-// console.log(H1)
-// console.log(Box)
 function App() {
 
-  const boxRef = useRef(null)
-  
-  useEffect(()=>{
-    console.log(boxRef)
-  }, [])
-
-
+console.log(Theme)
  
 
   return (
     <>
-     
-      <Wrapper 
-      grid
-      gap="10px"
-      size="lg" 
-      cols="1fr 1fr 1fr" 
-      areas="
-          'header header header'
-          'main main aside'
-          'footer footer footer'
-      "
-    >
-      <Header  h='80px' bg="#ccc" span="header"/>
-      <Main  flex flexWrap gap="10px" span="main">
-        <Box  h='150px' bg="#909A9B" />
-        <Box  h='150px' bg="#909A9B" />
-        <Box  h='150px' bg="#909A9B" />
-      </Main>
-      <Aside  h='400px' bg="#CACACA" m="0" span="aside"/>
-      <Footer  h='80px' bg="#ccc" span="footer"/>
-  </Wrapper>
-  <Box flex gap="10px" flexWrap flowColumnReverse>
-    <Box bg="#ccc" h="100px" w="200px" m="0" hover={{bg: 'red'}}>1</Box>
-    <Box bg="#ccc" h="100px" w="200px" m="0">2</Box>
-    <Box bg="#ccc" h="100px" w="200px" m="0">3</Box>
-  </Box>
+     <Box h="100px" rounded width="100px" shading   m="10px"bg="#f2f2f2"></Box>
+     <Box h="100px" rounded width="100px"  boxShadow="1px 2px 3px #ccc"  m="10px" bg="#f2f2f2"></Box>
+     <Box atomicClass="h:100px w:100px m:10px bg:#f2f2f2" rounded shading></Box>
     </> 
   )
 }
 
 
 export default App
+//create props tailwind css

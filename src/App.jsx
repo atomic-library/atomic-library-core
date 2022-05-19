@@ -3,6 +3,7 @@
 //-----------------------------------
 import {Box, Box as Wrapper, Header,Button, Main, Footer, Aside, Article, Input } from '../lib/elements'
 import { createTheme, Theme, } from '../lib/Theme'
+import Colors from '../lib/Colors/'
 import {useRef, useEffect} from 'react'
 import AtomicContext from '../lib/AtomicContext'
 import styled from 'styled-components'
@@ -11,7 +12,7 @@ import './App.css'
 
 createTheme({
   variants: {
-    v1: 'background: red;'
+    v1: 'background: red; height: 100px'
   }
 })
 
@@ -27,14 +28,13 @@ function App() {
 
   return (
     <>
-     {/* <Box sqr="100px 10px 20px * #f2f2f2 flex" center>asd</Box> */}
-     {/* <Box atomicClass="bg:red" breakpoints="sm{bg:pink} lg{bg:orange}">hola</Box>
-     <Box bg="#ccc" h="20px" myStyle={{br: '10px'}}></Box>
-     <Box breakpoints="sm{bg:pink} md{bg:blue}" atomicClass="bg:red">hola</Box> */}
-      <Box atomicClass="h:100px w:70vw br:10px .cssClass{h:50px;bg:#ccc}" shading>
-        <div className="cssClass"></div>
-      </Box>
-     
+     <Box box="100px 100px 1rem 0/s1rem 10px * #ccc red"
+     atomicClass={[
+       "* :hover bg:red tt:.5s",
+       "sm :hover bg:blue p:2rem"
+     ]}>
+asfds
+     </Box>
     </> 
   )
 }

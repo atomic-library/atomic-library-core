@@ -11,8 +11,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Mark Pro Medium";
-  background: #fff;
+  font-family: 'Segoe UI'
 }
 .element{
   width: 100px;
@@ -20,6 +19,9 @@ body {
   background: red;
   margin: 10px 0;
   box-shadow: 3px 4px 5px #000;
+}
+.hovercolor{
+
 }
 div{
 

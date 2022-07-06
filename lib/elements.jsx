@@ -23,5 +23,5 @@ export const {
         Code, Pre, Button, Img, P, H1, H2, H3, H4, H5, H6, Span, Input, 
         Blockquote, Q, Hr, A, Ul, Ol, Li, Dl, Dt, DD, Table, Td, Tr, Th, Thead, Tbody, 
         Tfoot, Textarea, Label, Audio, Video, Canvas, Fieldset, Iframe, Legend, 
-        Caption, Cite
+        Caption, Cite 
 } = res

@@ -1,6 +1,6 @@
 {
   "name": "atomic-library-core",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "this is library of react components and some functions useful for development",
   "keywords": [
     "react",
@@ -48,7 +48,7 @@
     "lib": "lib"
   },
   "author": "david gonzalez",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/atomic-library/atomic-library-core.git"

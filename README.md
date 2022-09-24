@@ -18,7 +18,7 @@ yarn add atomic-library-core
 This is little demo about containers, all of them are basically the same component, the difference is that each one return a sematic tag
 ```jsx
 import {
-  Box as Wrapper,
+  Box,
   Header,
   Main,
   Aside,
@@ -27,28 +27,30 @@ import {
 } from 'atomic-library-core'
 
 function App() {
-return (
-  <Wrapper 
-      grid
-      gap="10px"
-      size="lg" 
-      cols="1fr 1fr 1fr" 
-      areas="
+  const [state, setState] = useState(false)
+  return (
+    <>
+      <Box 
+        atmClass="grid grid-cols-3 gap:10px m-4"
+        areas={`
           'header header header'
           'main main aside'
           'footer footer footer'
-      "
-    >
-      <Header  h='80px' bg="#ccc" span="header"/>
-      <Main  flex flexWrap gap="10px" span="main">
-        <Box  h='150px' bg="#909A9B" />
-        <Box  h='150px' bg="#909A9B" />
-        <Box  h='150px' bg="#909A9B" />
-      </Main>
-      <Aside  h='400px' bg="#CACACA" m="0" span="aside"/>
-      <Footer  h='80px' bg="#ccc" span="footer"/>
-  </Wrapper>
-)
+        `}
+      >
+        <AtomicContext.Provider value={`rounded ${state ? "bg:#808B96" : "bg:#D5D8DC"}`}>
+          <Header atmClass="h:80px  area:header"/>
+          <Main atmClass="flex flex-wrap gap:10px area:main bg:none .first{ rounded-5 } ">
+            <Box atmClass="h:150px w-full" className='first'/>
+            <Box atmClass="h:150px w-full"/>
+            <Box atmClass="h:150px w-full"/>
+          </Main>
+          <Aside atmClass="h:400px area:aside"/>
+          <Footer atmClass="h:80px area:footer"/>
+        </AtomicContext.Provider>
+      </Box>
+    </> 
+  )
 }
 
 export default App

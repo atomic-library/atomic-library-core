@@ -38,11 +38,28 @@ createTheme({
 
 
 function App() {
-
-  
+  const [state, setState] = useState(false)
   return (
     <>
-      <Box atmClass="h:100px w:100px bg-red500 rounded "></Box>
+      <Box 
+        atmClass="grid grid-cols-3 gap:10px m-4"
+        areas={`
+          'header header header'
+          'main main aside'
+          'footer footer footer'
+        `}
+      >
+        <AtomicContext.Provider value={`rounded ${state ? "bg:#808B96" : "bg:#D5D8DC"}`}>
+          <Header atmClass="h:80px  area:header"/>
+          <Main atmClass="flex flex-wrap gap:10px area:main bg:none .first{ rounded-5 } ">
+            <Box atmClass="h:150px w-full" className='first'/>
+            <Box atmClass="h:150px w-full"/>
+            <Box atmClass="h:150px w-full"/>
+          </Main>
+          <Aside atmClass="h:400px area:aside"/>
+          <Footer atmClass="h:80px area:footer"/>
+        </AtomicContext.Provider>
+      </Box>
     </> 
   )
 }

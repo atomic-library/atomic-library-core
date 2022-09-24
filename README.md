@@ -56,7 +56,7 @@ function App() {
 export default App
 ```
 Result:
-![Screenshot](https://github.com/atomic-library/atomic-library-core/blob/master/src/assets/Capture.PNG)
+![Screenshot](https://github.com/atomic-library/atomic-library-core/blob/master/src/assets/capture.PNG)
 ## Note
 this is the new version of <a href="https://github.com/my-library-org/my-library-core">my-library-core</a>
 

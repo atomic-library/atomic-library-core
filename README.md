@@ -23,7 +23,7 @@ import {
   Main,
   Aside,
   Footer,
-  Box
+  AtomicContext
 } from 'atomic-library-core'
 
 function App() {

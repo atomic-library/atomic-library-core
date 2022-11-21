@@ -5,7 +5,7 @@ import {Box,Button, Main, Header, Aside, Footer, Box as Wrapper,  AtomicContext}
 import { createTheme, Theme} from '../lib/Theme'
 import {useRef, useEffect, useState} from 'react'
 import styled from 'styled-components'
-
+import TestComponent from '../lib/TestComponent'
 import './App.css'
 
 createTheme({
@@ -38,20 +38,22 @@ createTheme({
 
 
 function App() {
-  const [state, setState] = useState(false)
+  const [state, setState] = useState("red")
+  const divRef = useRef(null)
   return (
     <>
-      <Box 
+      {/* <Box 
         atmClass="grid grid-cols-3 gap:10px m-4"
         areas={`
           'header header header'
           'main main aside'
           'footer footer footer'
         `}
+        onClick={()=>setState(!state)}
       >
         <AtomicContext.Provider value={`rounded ${state ? "bg:#808B96" : "bg:#D5D8DC"}`}>
           <Header atmClass="h:80px  area:header"/>
-          <Main atmClass="flex flex-wrap gap:10px area:main bg:none .first{ rounded-5 } ">
+          <Main atmClass="flex flex-wrap gap:10px hola-ha area:main bg:none .first{ rounded-5 } ">
             <Box atmClass="h:150px w-full" className='first'/>
             <Box atmClass="h:150px w-full"/>
             <Box atmClass="h:150px w-full"/>
@@ -59,7 +61,17 @@ function App() {
           <Aside atmClass="h:400px area:aside"/>
           <Footer atmClass="h:80px area:footer"/>
         </AtomicContext.Provider>
-      </Box>
+      </Box> */}
+      <Box className={`bg-${state} card`}>hola component stlyes 1</Box>
+      
+      <button onClick={()=>setState("red")}>Red</button>
+      <button onClick={()=>setState("blue")}>blue</button>
+      <button onClick={()=>setState("yellow")}>yellow</button>
+      <button onClick={()=>setState("purple")}>purple</button>
+      <button onClick={()=>setState("brown")}>brown</button>
+      <button onClick={()=>setState("silver")}>silver</button>
+
+      <TestComponent atmClass={state}>hola</TestComponent>
     </> 
   )
 }

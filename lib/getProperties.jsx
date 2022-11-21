@@ -7,7 +7,7 @@ const getProperties = ({ atmPure, atmClass, areas, size, contextStyle, bgImg }) 
         ${atmPure ? atmPure : ""}
         ${areas ? `grid-template-areas: ${areas};` : ""}
         ${size ? `max-width: ${Theme.maxWidths[size]};` : ""}
-        ${bgImg ?  `baclground-image: ${bgImg};` : ""}
+        ${bgImg ?  `background-image: ${bgImg};` : ""}
         ${atmClass ? getValueClasses(atmClass) : ""}
     `
 }

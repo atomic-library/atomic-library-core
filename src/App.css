@@ -23,10 +23,10 @@ body {
 .hover_color{
 
 }
-div{
+this div{
 
 }
-!.text500{
+!.atm_text___500{
   font-weight: 900; 
 }
 @media (max-width: 500px){
@@ -35,18 +35,11 @@ div{
     font-weight: 300;
   }
 }
-.btn-l{
+.btn___l{
   background: blue;
 }
 
-.card{
 
-}
-
-.card button{
-  
-  border: none;
-}
 
 .myBtn{
   background: red;

@@ -1,6 +1,6 @@
 {
   "name": "atomic-library-core",
-  "version": "1.6.7",
+  "version": "1.6.8",
   "description": "this is library of react components and some functions useful for development",
   "keywords": [
     "react",
@@ -55,6 +55,5 @@
   },
   "bugs": {
     "url": "https://github.com/atomic-library/atomic-library-core/issues"
-  },
-  "homepage": "https://atomic-library.com/ "
+  }
 }

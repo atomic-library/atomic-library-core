@@ -11,8 +11,6 @@ npm install atomic-library-core
 ```bash
 yarn add atomic-library-core
 ```
-## Documentation
-[Go to documentation](https://atomic-library.com/)
 
 ## Demo
 This is little demo about containers, all of them are basically the same component, the difference is that each one return a sematic tag
